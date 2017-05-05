@@ -6,13 +6,9 @@
 //  Copyright © 2016年 xiaoyu. All rights reserved.
 //
 
-#ifdef __cplusplus
-#import <opencv2/opencv.hpp>
-#endif
-
 #import "XYPlateRecognizeUtil.h"
-
 #import "UIImageCVMatConverter.h"
+
 #include "easypr.h"
 #include "switch.hpp"
 #include "GlobalData.hpp"
@@ -27,7 +23,9 @@ using namespace easypr;
 @implementation XYPlateRecognizeUtil {
     cv::Mat source_image;
     CPlateRecognize pr;
+    cv::Mat RGB;
 }
+
 
 //返回值说明
 // plateStringArray 识别数组返回
@@ -39,7 +37,7 @@ using namespace easypr;
 //                     0  no plate to recognize
 //                     1  recognize success
 
--(void)recognizePateWithImage:(UIImage *)image complete:(void (^)(NSArray *plateStringArray,int code))complete {
+-(void)recognizePateWithImage:(UIImage *)image complete:(void (^)(NSString *carString,int code))complete {
     if (!image){
         if (complete) complete(nil,-1);
         return;
@@ -65,15 +63,51 @@ using namespace easypr;
         if (complete) complete(nil,0);
         return;
     }
-    NSMutableArray *rsArratTmp = [NSMutableArray array];
+//    NSMutableArray *rsArratTmp = [NSMutableArray array];
     size_t vecNum = plateVec.size();
     for (size_t i = 0; i < vecNum; i++) {
         string name=plateVec[i].getPlateStr();
         NSString *resultMessage = [NSString stringWithCString:plateVec[i].getPlateStr().c_str()
                                                      encoding:NSUTF8StringEncoding];
-        [rsArratTmp addObject:resultMessage];
+//        [rsArratTmp addObject:resultMessage];
+        if (complete) complete(resultMessage,1);
     }
-    if (complete) complete([NSArray arrayWithArray:rsArratTmp],1);
+    
+}
+
+-(void)recognizePateWithMat:(cv::Mat&)mat complete:(void (^)(NSString *carString,int code))complete {
+
+    NSString* bundlePath=[[NSBundle mainBundle] bundlePath];
+    std::string mainPath=[bundlePath UTF8String];
+    GlobalData::mainBundle() = mainPath;
+    pr.setLifemode(true);
+    pr.setDebug(false);
+    pr.setMaxPlates(4);
+    pr.setDetectType(easypr::PR_DETECT_CMSER);
+
+    cvtColor(mat, RGB, COLOR_BGRA2RGB);
+    vector<CPlate> plateVec;
+    double t=cv::getTickCount();
+    int result = pr.plateRecognize(RGB, plateVec);
+    t=cv::getTickCount()-t;
+    NSLog(@"time %f",t*1000/cv::getTickFrequency());
+    if (result == 0) {
+        size_t num = plateVec.size();
+        for (size_t j = 0; j < num; j++) {
+            cout << "plateRecognize: " << plateVec[j].getPlateStr() << endl;
+        }
+    }
+    if (result != 0) cout << "result:" << result << endl;
+    if(plateVec.size()==0){
+        if (complete) complete(nil,0);
+        return;
+    }else {
+        string name=plateVec[0].getPlateStr();
+        NSString *resultMessage = [NSString stringWithCString:plateVec[0].getPlateStr().c_str()
+                                                     encoding:NSUTF8StringEncoding];
+        if (complete) complete(resultMessage,1);
+    }
+    
 }
 
 @end

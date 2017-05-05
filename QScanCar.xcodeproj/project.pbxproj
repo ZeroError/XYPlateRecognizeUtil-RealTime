@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901D44971EB72D5300B482DD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901D44961EB72D5300B482DD /* CoreVideo.framework */; };
+		90F7CD801EB737C100ED0A03 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90F7CD7F1EB737C100ED0A03 /* ViewController.mm */; };
+		90F7CD831EB742E000ED0A03 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F7CD821EB742E000ED0A03 /* ScanViewController.m */; };
 		B81FBECC1DC34B160023D65E /* GlobalData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B81FBE691DC34B160023D65E /* GlobalData.cpp */; };
 		B81FBECD1DC34B160023D65E /* UIImageCVMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = B81FBE6C1DC34B160023D65E /* UIImageCVMatConverter.mm */; };
 		B81FBECE1DC34B160023D65E /* XYPlateRecognizeUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = B81FBE6E1DC34B160023D65E /* XYPlateRecognizeUtil.mm */; };
@@ -53,7 +56,6 @@
 		B81FBEFB1DC34C500023D65E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81FBEFA1DC34C500023D65E /* CoreMedia.framework */; };
 		B894ACFD1DC1CC050025FEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B894ACFC1DC1CC050025FEF6 /* main.m */; };
 		B894AD001DC1CC050025FEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B894ACFF1DC1CC050025FEF6 /* AppDelegate.m */; };
-		B894AD031DC1CC050025FEF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B894AD021DC1CC050025FEF6 /* ViewController.m */; };
 		B894AD061DC1CC050025FEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B894AD041DC1CC050025FEF6 /* Main.storyboard */; };
 		B894AD081DC1CC050025FEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B894AD071DC1CC050025FEF6 /* Assets.xcassets */; };
 		B894AD0B1DC1CC050025FEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B894AD091DC1CC050025FEF6 /* LaunchScreen.storyboard */; };
@@ -107,6 +109,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		901D44961EB72D5300B482DD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		90F7CD7F1EB737C100ED0A03 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		90F7CD811EB742E000ED0A03 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanViewController.h; path = ../EasyPRforiOS/ScanViewController.h; sourceTree = "<group>"; };
+		90F7CD821EB742E000ED0A03 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanViewController.m; path = ../EasyPRforiOS/ScanViewController.m; sourceTree = "<group>"; };
 		B81FBE691DC34B160023D65E /* GlobalData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GlobalData.cpp; sourceTree = "<group>"; };
 		B81FBE6A1DC34B160023D65E /* GlobalData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GlobalData.hpp; sourceTree = "<group>"; };
 		B81FBE6B1DC34B160023D65E /* UIImageCVMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCVMatConverter.h; sourceTree = "<group>"; };
@@ -185,12 +191,11 @@
 		B81FBEF61DC34C370023D65E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B81FBEF81DC34C3C0023D65E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B81FBEFA1DC34C500023D65E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		B894ACF81DC1CC050025FEF6 /* CarPR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B894ACF81DC1CC050025FEF6 /* QScanCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QScanCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B894ACFC1DC1CC050025FEF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B894ACFE1DC1CC050025FEF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B894ACFF1DC1CC050025FEF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B894AD011DC1CC050025FEF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B894AD021DC1CC050025FEF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B894AD051DC1CC050025FEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B894AD071DC1CC050025FEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B894AD0A1DC1CC050025FEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -292,6 +297,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901D44971EB72D5300B482DD /* CoreVideo.framework in Frameworks */,
 				B81FBEFB1DC34C500023D65E /* CoreMedia.framework in Frameworks */,
 				B81FBEF91DC34C3C0023D65E /* AVFoundation.framework in Frameworks */,
 				B81FBEF71DC34C370023D65E /* MobileCoreServices.framework in Frameworks */,
@@ -607,7 +613,7 @@
 		B894ACF91DC1CC050025FEF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B894ACF81DC1CC050025FEF6 /* CarPR.app */,
+				B894ACF81DC1CC050025FEF6 /* QScanCar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -616,13 +622,10 @@
 			isa = PBXGroup;
 			children = (
 				B81FBE671DC34B160023D65E /* EasyPRforiOS */,
-				B894ACFE1DC1CC050025FEF6 /* AppDelegate.h */,
-				B894ACFF1DC1CC050025FEF6 /* AppDelegate.m */,
+				90F7CD811EB742E000ED0A03 /* ScanViewController.h */,
+				90F7CD821EB742E000ED0A03 /* ScanViewController.m */,
 				B894AD011DC1CC050025FEF6 /* ViewController.h */,
-				B894AD021DC1CC050025FEF6 /* ViewController.m */,
-				B894B3261DC1E4050025FEF6 /* UIViewController+MVSPhotoPickerManager.h */,
-				B894B3271DC1E4060025FEF6 /* UIViewController+MVSPhotoPickerManager.m */,
-				B894B3AE1DC1F25A0025FEF6 /* test.jpg */,
+				90F7CD7F1EB737C100ED0A03 /* ViewController.mm */,
 				B894B3A61DC1E8ED0025FEF6 /* UIActionSheet+Blocks */,
 				B894B3991DC1E8C20025FEF6 /* PureLayout */,
 				B894B3291DC1E89C0025FEF6 /* CTAssetsPickerController */,
@@ -634,6 +637,11 @@
 		B894ACFB1DC1CC050025FEF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B894B3261DC1E4050025FEF6 /* UIViewController+MVSPhotoPickerManager.h */,
+				B894B3271DC1E4060025FEF6 /* UIViewController+MVSPhotoPickerManager.m */,
+				B894B3AE1DC1F25A0025FEF6 /* test.jpg */,
+				B894ACFE1DC1CC050025FEF6 /* AppDelegate.h */,
+				B894ACFF1DC1CC050025FEF6 /* AppDelegate.m */,
 				B894AD0C1DC1CC050025FEF6 /* Info.plist */,
 				B894AD091DC1CC050025FEF6 /* LaunchScreen.storyboard */,
 				B894AD071DC1CC050025FEF6 /* Assets.xcassets */,
@@ -646,6 +654,7 @@
 		B894AD121DC1CD2D0025FEF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				901D44961EB72D5300B482DD /* CoreVideo.framework */,
 				B81FBEFA1DC34C500023D65E /* CoreMedia.framework */,
 				B81FBEF81DC34C3C0023D65E /* AVFoundation.framework */,
 				B81FBEF61DC34C370023D65E /* MobileCoreServices.framework */,
@@ -781,9 +790,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B894ACF71DC1CC050025FEF6 /* CarPR */ = {
+		B894ACF71DC1CC050025FEF6 /* QScanCar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B894AD0F1DC1CC050025FEF6 /* Build configuration list for PBXNativeTarget "CarPR" */;
+			buildConfigurationList = B894AD0F1DC1CC050025FEF6 /* Build configuration list for PBXNativeTarget "QScanCar" */;
 			buildPhases = (
 				B894ACF41DC1CC050025FEF6 /* Sources */,
 				B894ACF51DC1CC050025FEF6 /* Frameworks */,
@@ -793,9 +802,9 @@
 			);
 			dependencies = (
 			);
-			name = CarPR;
+			name = QScanCar;
 			productName = CarPR;
-			productReference = B894ACF81DC1CC050025FEF6 /* CarPR.app */;
+			productReference = B894ACF81DC1CC050025FEF6 /* QScanCar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -805,16 +814,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = xiaoyu;
+				ORGANIZATIONNAME = fantasy;
 				TargetAttributes = {
 					B894ACF71DC1CC050025FEF6 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7Z58D5ARBL;
+						DevelopmentTeam = G3RE3M5C79;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = B894ACF31DC1CC050025FEF6 /* Build configuration list for PBXProject "CarPR" */;
+			buildConfigurationList = B894ACF31DC1CC050025FEF6 /* Build configuration list for PBXProject "QScanCar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -828,7 +837,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B894ACF71DC1CC050025FEF6 /* CarPR */,
+				B894ACF71DC1CC050025FEF6 /* QScanCar */,
 			);
 		};
 /* End PBXProject section */
@@ -869,6 +878,7 @@
 			files = (
 				B894B3AA1DC1E9AD0025FEF6 /* UIViewController+MVSPhotoPickerManager.h in Sources */,
 				B894B37A1DC1E89C0025FEF6 /* PHAssetCollection+CTAssetsPickerController.m in Sources */,
+				90F7CD831EB742E000ED0A03 /* ScanViewController.m in Sources */,
 				B894B3921DC1E89C0025FEF6 /* CTAssetsViewControllerTransition.m in Sources */,
 				B81FBEEA1DC34B160023D65E /* svm_train.cpp in Sources */,
 				B894B3A91DC1E8ED0025FEF6 /* UIActionSheet+Blocks.m in Sources */,
@@ -878,7 +888,6 @@
 				B894B3931DC1E89C0025FEF6 /* CTAssetThumbnailOverlay.m in Sources */,
 				B894B3891DC1E89C0025FEF6 /* CTAssetsGridViewController.m in Sources */,
 				B81FBEDB1DC34B160023D65E /* chars_identify.cpp in Sources */,
-				B894AD031DC1CC050025FEF6 /* ViewController.m in Sources */,
 				B894B37E1DC1E89C0025FEF6 /* CTAssetCheckmark.m in Sources */,
 				B81FBEDE1DC34B160023D65E /* core_func.cpp in Sources */,
 				B894B37F1DC1E89C0025FEF6 /* CTAssetCollectionViewCell.m in Sources */,
@@ -900,6 +909,7 @@
 				B81FBEDD1DC34B160023D65E /* chars_segment.cpp in Sources */,
 				B894B3941DC1E89C0025FEF6 /* CTAssetThumbnailStacks.m in Sources */,
 				B894B3861DC1E89C0025FEF6 /* CTAssetsGridSelectedView.m in Sources */,
+				90F7CD801EB737C100ED0A03 /* ViewController.mm in Sources */,
 				B894B38F1DC1E89C0025FEF6 /* CTAssetsPickerAccessDeniedView.m in Sources */,
 				B894B3A31DC1E8C20025FEF6 /* ALView+PureLayout.m in Sources */,
 				B81FBECE1DC34B160023D65E /* XYPlateRecognizeUtil.mm in Sources */,
@@ -1064,7 +1074,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7Z58D5ARBL;
+				DEVELOPMENT_TEAM = G3RE3M5C79;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1081,7 +1091,7 @@
 				);
 				INFOPLIST_FILE = CarPR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.CarPR;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fantasy.";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -1091,7 +1101,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7Z58D5ARBL;
+				DEVELOPMENT_TEAM = G3RE3M5C79;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1108,7 +1118,7 @@
 				);
 				INFOPLIST_FILE = CarPR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.CarPR;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-fantasy.";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -1117,7 +1127,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B894ACF31DC1CC050025FEF6 /* Build configuration list for PBXProject "CarPR" */ = {
+		B894ACF31DC1CC050025FEF6 /* Build configuration list for PBXProject "QScanCar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B894AD0D1DC1CC050025FEF6 /* Debug */,
@@ -1126,7 +1136,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B894AD0F1DC1CC050025FEF6 /* Build configuration list for PBXNativeTarget "CarPR" */ = {
+		B894AD0F1DC1CC050025FEF6 /* Build configuration list for PBXNativeTarget "QScanCar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B894AD101DC1CC050025FEF6 /* Debug */,
